@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Header = styled.h1`
+const Title = styled.h1`
   font-size: 64px;
   color: tomato;
   margin: 0;
@@ -14,8 +14,9 @@ const Header = styled.h1`
 
   @media (max-width: 808px) {
     font-size: 48px;
-    flex-direction: column;
   }
 `
 
-export default Header
+export default Title
+
+// Title: styles change when on Index

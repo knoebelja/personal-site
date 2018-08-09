@@ -11,6 +11,7 @@
   "author": "Joseph Knoebel",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "next": "^6.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

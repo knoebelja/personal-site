@@ -1,8 +1,6 @@
-import styled from "styled-components"
-
 import Anchor from "./Anchor"
 
-const NavAnchor = Anchor.extend`
+const NavigationAnchor = Anchor.extend`
   font-size: 32px;
   text-decoration: ${props =>
     props.isCurrent ? "overline underline" : "underline"};
@@ -12,4 +10,6 @@ const NavAnchor = Anchor.extend`
   }
 `
 
-export default NavAnchor
+export default NavigationAnchor
+
+// Navigation Anchor: styles change when anchor navigates to the current page

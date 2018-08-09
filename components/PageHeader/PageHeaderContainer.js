@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
 const PageHeaderContainer = styled.div`
-  height: 96px;
-  width: 100%;
+  height: ${props => props.theme.pageHeaderHeight};
+  padding: 0 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
   font-family: "Kirang Haerang", cursive;
 
   @media (max-width: 808px) {

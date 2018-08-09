@@ -1,4 +1,7 @@
 import App, { Container } from "next/app"
+import { ThemeProvider } from "styled-components"
+
+import theme from "../utils/theme"
 import PageHeader from "../components/PageHeader"
 
 class MyApp extends App {
@@ -15,10 +18,12 @@ class MyApp extends App {
   render() {
     const { Component, router, pageProps } = this.props
     return (
-      <Container>
-        <PageHeader currentPage={router.route} />
-        <Component {...pageProps} />
-      </Container>
+      <ThemeProvider theme={theme}>
+        <Container>
+          <PageHeader currentPage={router.route} />
+          <Component {...pageProps} />
+        </Container>
+      </ThemeProvider>
     )
   }
 }
